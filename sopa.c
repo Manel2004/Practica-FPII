@@ -16,28 +16,23 @@ void benvinguda()
 }
 
 
-/* void llegir_fitxer()
-{
-     FILE* lectura_arxiu;
-    char paraules[100];
-    
-    lectura_arxiu = fopen("paraules.txt", "r");
-    
-    if (arxiu == NULL)
-    {
-        printf("S'ha produït un error durant l'obertura del fitxer");
+
+
+void leerPalabrasDeArchivo(const char* nombreArchivo) {
+    FILE* archivo = fopen(nombreArchivo, "r");
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo.\n");
+        return;
     }
-    else
-    {
-    
-        while (fscanf()
-    
-    
-        
+
+    char palabra[MAX_WORD_LENGTH];
+    while (fscanf(archivo, "%s", palabra) == 1) {
+        printf("%s\n", palabra);
     }
+
+    fclose(archivo);
 }
 
-  */
 
 
 int mida_taula()

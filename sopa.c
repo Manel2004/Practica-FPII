@@ -5,6 +5,8 @@
 #define FILAS 40
 #define COLUMNAS 40
 
+#define MAX_PALABRA 20
+
 
 
 void benvinguda()

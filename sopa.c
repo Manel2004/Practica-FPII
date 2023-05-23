@@ -17,6 +17,14 @@ void benvinguda()
 
 
 
+void rendicio (char paraula[])
+{
+    if(paraula[]=='RENDICIO')
+    {
+        break;
+    }
+}
+
 
 void leerPalabrasDeArchivo(const char* nombreArchivo) {
     FILE* archivo = fopen(nombreArchivo, "r");

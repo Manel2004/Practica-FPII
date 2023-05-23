@@ -87,6 +87,44 @@ void mostrar_sopa_letras(char sopa[FILAS][COLUMNAS], int mida)
     }
 }
 
+
+
+void insertarPalabra(char sopa[FILAS][COLUMNAS], char palabra[MAX_PALABRA], int fila, int columna, int direccion) {
+    int longitud = strlen(palabra);
+    int i;
+
+    switch (direccion) {
+        case 0:  // Horizontal hacia la derecha
+            for (i = 0; i < longitud; i++) {
+                sopa[fila][columna + i] = palabra[i];
+            }
+            break;
+        case 1:  // Vertical hacia abajo
+            for (i = 0; i < longitud; i++) {
+                sopa[fila + i][columna] = palabra[i];
+            }
+            break;
+        case 2:  // Diagonal hacia abajo y hacia la derecha
+            for (i = 0; i < longitud; i++) {
+                sopa[fila + i][columna + i] = palabra[i];
+            }
+            break;
+        // Puedes agregar más direcciones según tus necesidades
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 int main()
 {
     char sopa[FILAS][COLUMNAS];

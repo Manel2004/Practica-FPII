@@ -145,5 +145,9 @@ int main()
     // Mostrar la sopa de letras en la consola
     mostrar_sopa_letras(sopa, mida);
     
+    insertarPalabra()
+    
+    
+    
     return 0;
 }

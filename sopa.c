@@ -52,7 +52,7 @@ int mida_taula()
 
     while((mida < 10)||(mida > 40))
     {
-        printf("Aquest valor no esta dins del rang.");
+        printf("Aquest valor no esta dins del rang. Torna a posar-la: ");
         scanf("%d", &mida);
     }
     return mida;
